@@ -83,17 +83,25 @@ body {
     background: #1049a9;
     color: rgba(246,246,246,1);
     font-family: 'Ruslan Display', cursive;
+    text-align: center;
 }
 
 #wrapper {
     margin: 30px;
 }
 
+header {
+    clear: both;
+    text-align: center;
+}
+nav{
+    display: inline-block;
+}
 #Menu {
     list-style: none;
     font-size: 16px;
     font-weight: Bold;
-    padding: 14px 0 0 300px;
+    padding-top: 14px;
     margin-top: 0;
     float: left;
     margin-left: 0;
@@ -173,7 +181,7 @@ article {
     width: 50%;
     border-radius: 20px;
     padding: 20px;
-    margin-left: 300px;
+    display: inline-block;
 }
 
     article h2 {
@@ -189,4 +197,8 @@ article {
 .creds img {
     border: solid 1px #5e3a21;
     border-radius: 20px;
+}
+
+#contacts img {
+    width: 100%;
 }
