@@ -12,124 +12,181 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 h1 {
-font-size: 2em;
+    font-size: 2em;
 }
 
 h2 {
-font-size: 1.5em;
+    font-size: 1.5em;
 }
 
 h3 {
-font-size: 1.17em;
+    font-size: 1.17em;
 }
 
 h5 {
-font-size: .83em;
+    font-size: .83em;
 }
 
 h6 {
-font-size: .75em;
+    font-size: .75em;
 }
 /**********************************************************/
+@font-face {
+    font-family: 'Ruslan Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Ruslan Display'), local('RuslanDisplay'), url(http://fonts.gstatic.com/s/ruslandisplay/v6/SREdhlyLNUfU1VssRBfs3nfn3bHKzcZUG_lDZfW_WhE.woff) format('woff');
+}
+
 body {
-    background: rgba(134,174,204,1);
-    background: -moz-linear-gradient(-45deg, rgba(134,174,204,1) 0%, rgba(212,228,239,1) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(134,174,204,1)), color-stop(100%, rgba(212,228,239,1)));
-    background: -webkit-linear-gradient(-45deg, rgba(134,174,204,1) 0%, rgba(212,228,239,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(134,174,204,1) 0%, rgba(212,228,239,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(134,174,204,1) 0%, rgba(212,228,239,1) 100%);
-    background: linear-gradient(135deg, rgba(134,174,204,1) 0%, rgba(212,228,239,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86aecc', endColorstr='#d4e4ef', GradientType=1 );
+    background: #1049a9;
     color: rgba(246,246,246,1);
-    font-family:Tahoma;
+    font-family: 'Ruslan Display', cursive;
 }
 
 #wrapper {
     margin: 30px;
 }
+
 #Menu {
-list-style:none;
-font-size:16px;
-font-weight:Bold;
-padding:14px 0 0 300px;
-margin-top:0;
-float:left;
-margin-left:0;
+    list-style: none;
+    font-size: 16px;
+    font-weight: Bold;
+    padding: 14px 0 0 300px;
+    margin-top: 0;
+    float: left;
+    margin-left: 0;
+}
 
-}
-#Menu a{
-text-decoration:none;
-text-transform:uppercase;
-}
-#Menu li{padding:20px;}
-#Menu ul {display:none;}
-#Menu { list-style:none;}
-#Menu li:hover > ul {display:block;}
-#Menu li ul { margin:0; padding:0; position:absolute;z-index:5;padding-top:6px;}
-#Menu li { float:left; margin-left:10px; }
-#Menu li ul li { float:none; margin:0; display:inline;padding:0; }
-#Menu li ul li a {display:block; padding:6px 10px; background:#ff6a00;; white-space:nowrap;}
-#Menu li { display: list-item; text-align: -webkit-match-parent;}
-#Menu ul { border:0; font-size:100%; font:inherit;vertical-align:baseline;}
+    #Menu a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ff6a00;
+    }
 
-section{
-    clear:both;    
-    text-align:center;
-        margin-top:50px;
-}
-article{
-    background:#ff6a00;
-    border:solid 3px #5e3a21;
-    width:50%;
-    border-radius:20px;
-    padding:20px;
-    margin-left:300px;
+    #Menu li {
+        padding: 20px;
+    }
 
+    #Menu ul {
+        display: none;
+    }
+
+#Menu {
+    list-style: none;
 }
-article h2{
-    font-size:3em;
-    letter-spacing:2px;
-    line-height:1.2em;
+
+    #Menu li:hover > ul {
+        display: block;
+    }
+
+    #Menu li ul {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 5;
+        padding-top: 6px;
+    }
+
+    #Menu li {
+        float: left;
+        margin-left: 10px;
+    }
+
+        #Menu li ul li {
+            float: none;
+            margin: 0;
+            display: inline;
+            padding: 0;
+        }
+
+            #Menu li ul li a {
+                display: block;
+                padding: 6px 10px;
+                background: rgb(255, 206, 0);
+                color: #fff;
+                white-space: nowrap;
+            }
+
+    #Menu li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+
+    #Menu ul {
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+    }
+
+section {
+    clear: both;
+    text-align: center;
+    margin-top: 50px;
 }
-article h2::after, article h2::before{
-    content:'"';
+
+article {
+    background: #ff6a00;
+    border: solid 3px #5e3a21;
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 300px;
 }
-.creds img{
-    border:solid 1px #5e3a21;
-    border-radius:20px;
+
+    article h2 {
+        font-size: 3em;
+        letter-spacing: 2px;
+        line-height: 1.2em;
+    }
+
+        article h2::after, article h2::before {
+            content: '"';
+        }
+
+.creds img {
+    border: solid 1px #5e3a21;
+    border-radius: 20px;
 }
