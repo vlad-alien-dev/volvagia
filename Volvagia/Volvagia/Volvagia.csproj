@@ -57,8 +57,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="calc.css" />
-    <Content Include="HtmlPage1.html" />
     <Content Include="index.html" />
     <Content Include="styles.css" />
     <Content Include="Web.config" />
