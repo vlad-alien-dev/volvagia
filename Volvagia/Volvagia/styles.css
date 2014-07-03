@@ -176,16 +176,16 @@ section {
 }
 
 article {
-    background: #ff6a00;
-    border: solid 3px #5e3a21;
-    width: 50%;
-    border-radius: 20px;
-    padding: 20px;
-    display: inline-block;
+background: #ff6a00;
+border: groove 3px #DADA11;
+width: 50%;
+border-radius: 20px;
+padding: 20px;
+display: inline-block;
 }
 
     article h2 {
-        font-size: 3em;
+        font-size: 1.5em;
         letter-spacing: 2px;
         line-height: 1.2em;
     }
@@ -194,9 +194,9 @@ article {
             content: '"';
         }
 
-.creds img {
-    border: solid 1px #5e3a21;
-    border-radius: 20px;
+.creds img, span {
+border: groove 2px #dada11;
+border-radius: 20px;
 }
 
 #contacts img {
