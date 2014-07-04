@@ -107,7 +107,7 @@ nav {
     height: 30px;
     border: solid;
     border-radius: 11px;
-    width: 52%;
+    width: 837px;
     margin: auto;
 }
 
@@ -196,6 +196,7 @@ a {
 #Menu li {
     display: list-item;
     text-align: -webkit-match-parent;
+	width: 13%;
 }
 
 #Menu ul {
