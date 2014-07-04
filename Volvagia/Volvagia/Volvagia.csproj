@@ -62,7 +62,15 @@
     <Content Include="styles.css" />
     <Content Include="Web.config" />
     <Content Include="images\vladi.png" />
-  </ItemGroup>
+	<Content Include="images\cool.png" />
+	<Content Include="images\inlove.png" />
+	<Content Include="images\sponge.png" />
+	<Content Include="images\aroused.png" />
+	<Content Include="images\lol.png" />
+	<Content Include="images\evil.png" />
+	<Content Include="community.html" />
+	<Content Include="lorem.html" />
+	</ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
