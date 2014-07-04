@@ -167,7 +167,8 @@ a {
 
 #Menu li {
     float: left;
-    padding: 7px 28px;
+    padding: 7px 3%;
+    width: 13%;
 }
 
     #Menu li ul li {
