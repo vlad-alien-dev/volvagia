@@ -54,6 +54,7 @@ table {
 
 h1 {
     font-size: 2em;
+    padding: 20px 0;
 }
 
 h2 {
@@ -125,6 +126,7 @@ nav {
         #Menu li:last-child {
             border: 0;
             border-radius: 0 6px 6px 0;
+            padding: 1% 4.2%;
         }
 
         #Menu li:first-child {
@@ -167,8 +169,7 @@ a {
 
 #Menu li {
     float: left;
-    padding: 7px 3%;
-    width: 13%;
+    padding: 1% 3%;
 }
 
     #Menu li ul li {
@@ -178,15 +179,17 @@ a {
         padding: 0 0 2px 0;
         background: none;
         border: none;
+                    
     }
-
+    #Menu li ul li:last-child {padding: 0 0 2px 0;
+    }
         #Menu li ul li a {
             display: block;
             padding: 6px 10px;
             background: rgb(255, 206, 0);
             white-space: nowrap;
             width: 150px;
-            border-bottom:solid 1px #fff;
+            border-bottom: solid 1px #fff;
         }
 
             #Menu li ul li a:hover {
@@ -210,9 +213,11 @@ section {
     clear: both;
     text-align: center;
     margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
 }
 
-article {
+article, #flock div {
     background: #ff6a00;
     border: groove 3px #DADA11;
     width: 50%;
@@ -242,11 +247,49 @@ article {
     width: 172px;
     height: 136px;
     color: rgba(0,0,0,0);
-    background:#1049a9;
+    background: #1049a9;
     font-size: 181px;
     text-shadow: 0px 14px 4px rgb(218,218,17);
     display: inline-block;
 }
+
+#flock {
+    background-image: url('images/sheep.png'),url('images/sheep.png'),url('images/sheep.png'),url('images/sheep.png'),url('images/grass.png');
+    background-repeat: no-repeat, no-repeat, no-repeat,no-repeat,repeat-x;
+    background-position-x: 96%, 20%, 92%, 6%, 20%, 0;
+    background-size: 9%,4%,17%,13%, 40%;
+    height: 250px;
+}
+
+    #flock div {
+        background: none;
+        background-image: url('images/sheep.png'),url('images/sheep.png'),url('images/sheep.png'),url('images/sheep.png');
+        background-repeat: no-repeat, no-repeat, no-repeat,no-repeat;
+        background-position-x: 63%, 31%, 92%, 6%;
+        background-position-y: 56%, 61%, 88%, 5%;
+        background-size: 26%,10%,17%,21%;
+        height: 80%;
+    }
+
+        #flock div h3 {
+            padding-bottom: 10px;
+        }
+
+.space {
+    /* Pass a comma separated list of backgrounds: */
+    background: url('http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/rocket_big.png') no-repeat center 70px, url('http://demo.tutorialzine.com/2013/10/css3-features-you-can-finally-use/assets/img/space.jpg') no-repeat bottom center;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 3px;
+    /* Animate the positions of both of the backgrounds */
+    transition: background-position 1s;
+}
+
+    .space:hover {
+        /* The same goes for properties like background-position and repeat */
+        background-position: 35% 20px, top right;
+    }
 
 #contacts img {
     width: 100%;
@@ -255,4 +298,7 @@ article {
 .anchor {
     position: relative;
     top: 0px;
+}
+#nothing{
+    text-decoration:line-through;
 }
