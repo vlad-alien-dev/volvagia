@@ -54,6 +54,7 @@ table {
 
 h1 {
     font-size: 2em;
+	margin: 50px;
 }
 
 h2 {
@@ -107,7 +108,7 @@ nav {
     height: 30px;
     border: solid;
     border-radius: 11px;
-    width: 837px;
+    width: 1000px;
     margin: auto;
 }
 
@@ -125,6 +126,7 @@ nav {
         #Menu li:last-child {
             border: 0;
             border-radius: 0 6px 6px 0;
+			width: 140px;
         }
 
         #Menu li:first-child {
@@ -148,7 +150,7 @@ nav {
             color: #fff;
         }
 
-a {
+li a {
     color: #ff6a00;
 }
 
@@ -168,7 +170,9 @@ a {
 #Menu li {
     float: left;
     padding: 7px 3%;
-    width: 13%;
+    display: list-item;
+    text-align: -webkit-match-parent;
+	width: 137px;
 }
 
     #Menu li ul li {
@@ -193,11 +197,6 @@ a {
                 background: blue;
             }
 
-#Menu li {
-    display: list-item;
-    text-align: -webkit-match-parent;
-	width: 13%;
-}
 
 #Menu ul {
     border: 0;
@@ -215,7 +214,7 @@ section {
 article {
     background: #ff6a00;
     border: groove 3px #DADA11;
-    width: 50%;
+    width: 1000px;
     border-radius: 20px;
     padding: 20px;
     display: inline-block;
@@ -234,6 +233,7 @@ article {
 .creds img {
     border: groove 3px #dada11;
     border-radius: 20px;
+	width: 170px;
 }
 
 .creds div {
@@ -255,4 +255,8 @@ article {
 .anchor {
     position: relative;
     top: 0px;
+}
+
+#more_paragraphs {
+  color: #fff;
 }
