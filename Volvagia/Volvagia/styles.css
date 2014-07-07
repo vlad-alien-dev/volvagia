@@ -189,7 +189,7 @@ li a {
             padding: 6px 10px;
             background: rgb(255, 206, 0);
             white-space: nowrap;
-            width: 150px;
+            width: 175px;
             border-bottom:solid 1px #fff;
         }
 
@@ -259,4 +259,9 @@ article {
 
 #more_paragraphs {
   color: #fff;
+}
+
+#important
+{
+text-decoration: underline;
 }
