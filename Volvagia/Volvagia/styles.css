@@ -265,3 +265,21 @@ article {
 {
 text-decoration: underline;
 }
+
+.left_float
+{
+margin: 10px;
+position: relative;
+float: left;
+}
+
+.right_float
+{
+margin: 10px;
+position: relative;
+float: right;
+}
+
+article p {
+	text-align: justify;
+}
